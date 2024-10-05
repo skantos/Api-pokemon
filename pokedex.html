@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Avanzada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <div class="search-container">
+            <input type="text" id="pokemonName" placeholder="Nombre o ID de Pokémon del 1 al 1025">
+            <button id="searchBtn">Buscar</button>
+        </div>
+        <div id="pokemonInfo" class="pokemon-info"></div>
+    </div>
+
+    <!-- Plantilla para tarjeta de Pokémon -->
+    <template id="pokemonCardTemplate">
+        <div class="pokemon-card">
+            <img class="pokemon-img" src="" alt="Imagen de Pokémon">
+            <h2 class="pokemon-name"></h2>
+            <p>ID: <span class="pokemon-id"></span></p>
+            <p>Altura: <span class="pokemon-height"></span> m</p>
+            <p>Peso: <span class="pokemon-weight"></span> kg</p>
+            <p>Tipo: <span class="pokemon-type"></span></p>
+            <div class="evolutions-container"></div>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
